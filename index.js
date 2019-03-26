@@ -1,4 +1,4 @@
-module.exports = function(){
+
 
     function getKeyString(str){
         try {
@@ -17,9 +17,9 @@ module.exports = function(){
         } catch (e) {
             return false;
         }
-        data.foreach(function(item){
-            responseArray.push(item)
-        })
+        for(var key in data){
+            responseArray.push(data[key])
+        }
         return responseArray.join(',')
     }
 
@@ -30,10 +30,10 @@ module.exports = function(){
         } catch (e) {
             return false;
         }
-        data.foreach(function(item){
-            responseArray.push(item)
-        })
+        for(var key in data){
+            responseArray.push(data[key])
+        }
         return responseArray
     }
+
     
-}
