@@ -1,5 +1,5 @@
 
-
+module.exports = function(){
     function getKeyString(str){
         try {
         var data = JSON.parse(str);
@@ -35,5 +35,6 @@
         }
         return responseArray
     }
+}
 
     
