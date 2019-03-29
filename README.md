@@ -19,3 +19,14 @@ returns a string with each value of each key in JSON object separated by a comma
 Paramter str is a valid JSON string
 returns an array with each key in JSON object
 
+## Example
+
+`var jsDisect = require('json-disect')`
+var obj={
+            name:'sapta',
+            age:23,
+            email:'dey7.kol@gmail.com'
+        }
+console.log(jsDisect.getKeyString(JSON.stringify(obj)))
+console.log(jsDisect.getObjectString(JSON.stringify(obj)))
+console.log(jsDisect.getObjectArray(JSON.stringify(obj)))
