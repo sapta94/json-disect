@@ -34,6 +34,24 @@
         }
         return responseArray
     }
+
+    function sortOnKey(data,searchkey){
+        try {
+            data.forEach(function(item){
+                if(item.searchkey==undefined){
+                    item.searchkey = null;
+                }
+                
+            })
+        } catch (e) {
+            return false;
+        }
+        var keyArray = Object.keys(data)
+        keyArray.sort();
+        keyArray.forEach(function(item){
+            responseArray.push()
+        })
+    }
 module.exports ={
     getObjectArray,
     getKeyString,
