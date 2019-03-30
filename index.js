@@ -35,7 +35,7 @@
         return responseArray
     }
 
-    function sortOnKey(data,searchkey){
+    function sortOnKey(data,searchkey,type=0){
         
         try {
             var n = data.length;
@@ -52,7 +52,10 @@
                 }
                 
             })
-            return data
+            if(type==-1)
+                return data.reverse()
+            else
+                return data
         } catch (e) {
             console.log(e)
             return false;
@@ -60,6 +63,7 @@
         
     }
 
+    
 module.exports ={
     getObjectArray,
     getKeyString,
