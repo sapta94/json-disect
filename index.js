@@ -36,22 +36,30 @@
     }
 
     function sortOnKey(data,searchkey){
+        
         try {
-            data.forEach(function(item){
-                if(item.searchkey==undefined){
-                    item.searchkey = null;
+            var n = data.length;
+            data.forEach(function(item,count){
+                if(item[searchkey]==undefined){
+                    item[searchkey] = null;
+                }
+                for(j=0;j<n-count-1;j++){
+                    if (data[j][searchkey] > data[j+1][searchkey]){
+                        temp = data[j]
+                        data[j]=data[j+1]
+                        data[j+1]=temp
+                    }
                 }
                 
             })
+            return data
         } catch (e) {
+            console.log(e)
             return false;
         }
-        var keyArray = Object.keys(data)
-        keyArray.sort();
-        keyArray.forEach(function(item){
-            responseArray.push()
-        })
+        
     }
+
 module.exports ={
     getObjectArray,
     getKeyString,
