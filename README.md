@@ -28,12 +28,12 @@ returns a sorted (ascending/descending) based on the above parameters
 ## Example
 
 `var jsDisect = require('json-disect')`
-var obj={
+`var obj={
             name:'sapta',
             age:23,
             email:'dey7.kol@gmail.com'
-        }
-console.log(jsDisect.getKeyString(JSON.stringify(obj)))
-console.log(jsDisect.getObjectString(JSON.stringify(obj)))
-console.log(jsDisect.getObjectArray(JSON.stringify(obj)))
-console.log(jsDisect.sortOnKey(obj,'age'))
+        }`
+`console.log(jsDisect.getKeyString(JSON.stringify(obj)))`
+`console.log(jsDisect.getObjectString(JSON.stringify(obj)))`
+`console.log(jsDisect.getObjectArray(JSON.stringify(obj)))`
+`console.log(jsDisect.sortOnKey(obj,'age'))`
