@@ -1,6 +1,6 @@
 {
   "name": "json-disect",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "An npm module to perform all kinds of operations like key extract, value extract,sorting based on keys/values,etc.",
   "main": "index.js",
   "scripts": {
