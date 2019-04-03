@@ -67,7 +67,8 @@
 module.exports ={
     getObjectArray,
     getKeyString,
-    getObjectString
+    getObjectString,
+    sortOnKey
 }
 
     
